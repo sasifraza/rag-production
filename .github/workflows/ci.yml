@@ -21,13 +21,22 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install system dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-
-      - name: Install Python dependencies
-        run: |
           pip install -r requirements.txt
+
+      - name: Validate secret exists
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os
+          key = os.getenv("OPENAI_API_KEY", "")
+          print("KEY_EXISTS:", bool(key))
+          print("KEY_PREFIX:", key[:7] if key else "MISSING")
+          print("KEY_LENGTH:", len(key))
+          PY
 
       - name: Run evaluation
         env:
