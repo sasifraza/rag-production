@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What is the refund policy?",
+    "ground_truth": "Customers may request a refund within 30 days of purchase if the product is unused and in its original packaging."
+  },
+  {
+    "question": "How long does shipping take?",
+    "ground_truth": "Orders are processed within 2 business days and delivery takes 5 to 7 business days."
+  },
+  {
+    "question": "What is the return policy?",
+    "ground_truth": "Returns are accepted within 15 days and customers are responsible for return shipping fees."
+  }
+]
