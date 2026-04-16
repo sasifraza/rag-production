@@ -1,11 +1,28 @@
+# Environment
 venv/
-__pycache__/
-*.pyc
 .env
-chroma_db/
-*.log
-.DS_Storevenv/
+
+# Python
 __pycache__/
 *.pyc
-.DS_Store
+*.pyo
+
+# Data & Vector Store
 vectorstore/
+data/processed/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+
+# Build
+*.egg-info/
+dist/
+build/

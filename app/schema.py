@@ -2,18 +2,20 @@ from pydantic import BaseModel, Field
 from typing import List
 
 
-class AskRequest(BaseModel):
-    question: str = Field(..., min_length=3)
-    top_k: int = Field(default=8, ge=1, le=20)
+class QueryRequest(BaseModel):
+    question: str = Field(..., min_length=1, max_length=2000)
 
 
-class SourceItem(BaseModel):
-    source: str
-    chunk_id: int
+class SourceDocument(BaseModel):
     content: str
-    score: float
+    metadata: dict = {}
 
 
-class AskResponse(BaseModel):
+class QueryResponse(BaseModel):
     answer: str
-    sources: List[SourceItem]
+    sources: List[SourceDocument]
+    query: str
+
+
+class HealthResponse(BaseModel):
+    status: str = "ok"

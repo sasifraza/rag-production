@@ -1,16 +1,29 @@
+# API & Server
 fastapi
-uvicorn
-pydantic
+uvicorn[standard]
+
+# LLM & Embeddings
+openai>=2.0.0
 langchain
-langchain-community 
-faiss-cpu
-rank-bm25
-sentence-transformers
+langchain-community
+langchain-openai
+
+# Document Loading
 pypdf
-numpy 
-pandas
-openai
+docx2txt
+
+# Vector Store
+chromadb
+langchain-chroma
+
+# Config & Validation
+pydantic>=2.7.4
+pydantic-settings
+
+# Evaluation
 ragas
 datasets
-langchain-text-splitters
-langchain-openai
+
+# Utilities
+tqdm
+loguru
