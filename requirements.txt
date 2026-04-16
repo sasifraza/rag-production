@@ -32,4 +32,4 @@ loguru==0.7.2
 # Testing
 pytest==9.0.3
 
-pip install sentence-transformers
+sentence-transformers
