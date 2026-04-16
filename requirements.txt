@@ -1,33 +1,34 @@
 # API & Server
-fastapi
-uvicorn[standard]
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
 
 # LLM & Embeddings
-openai>=2.0.0
-langchain
-langchain-community
-langchain-openai
-langchain-text-splitters
+openai==1.109.1
+langchain==0.2.17
+langchain-community==0.2.19
+langchain-openai==0.1.25
+langchain-text-splitters==0.2.4
+langchain-core==0.2.43
 
 # Document Loading
-pypdf
-docx2txt
+pypdf==4.2.0
+docx2txt==0.8
 
 # Vector Store
-chromadb
-langchain-chroma
+chromadb==1.5.7
+langchain-chroma==1.1.0
 
 # Config & Validation
-pydantic>=2.7.4
-pydantic-settings
+pydantic==2.13.1
+pydantic-settings==2.13.1
 
 # Evaluation
 ragas==0.1.21
-datasets
+datasets==4.8.4
 
 # Utilities
-tqdm
-loguru
+tqdm==4.66.4
+loguru==0.7.2
 
 # Testing
-pytest
+pytest==9.0.3
