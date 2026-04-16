@@ -26,3 +26,4 @@ logs/
 *.egg-info/
 dist/
 build/
+eval/results.csv

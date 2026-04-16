@@ -1,0 +1,26 @@
+[
+  {
+    "question": "How many days do customers have to request a refund?",
+    "ground_truth": "Customers may request a refund within 30 days of purchase."
+  },
+  {
+    "question": "What condition must the product be in for a refund?",
+    "ground_truth": "The product must be unused and in original packaging."
+  },
+  {
+    "question": "How long does order processing take?",
+    "ground_truth": "Orders are processed within 2 business days."
+  },
+  {
+    "question": "How long does delivery take?",
+    "ground_truth": "Delivery takes 5 to 7 business days."
+  },
+  {
+    "question": "How many days do customers have to return a product?",
+    "ground_truth": "Returns are accepted within 15 days."
+  },
+  {
+    "question": "Who pays for return shipping?",
+    "ground_truth": "Customers are responsible for return shipping fees."
+  }
+]

@@ -7,6 +7,7 @@ openai>=2.0.0
 langchain
 langchain-community
 langchain-openai
+langchain-text-splitters
 
 # Document Loading
 pypdf
@@ -21,7 +22,7 @@ pydantic>=2.7.4
 pydantic-settings
 
 # Evaluation
-ragas
+ragas==0.1.21
 datasets
 
 # Utilities
