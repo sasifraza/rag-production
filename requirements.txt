@@ -16,7 +16,6 @@ docx2txt==0.8
 
 # Vector Store
 chromadb==1.5.7
-langchain-chroma==0.1.4
 
 # Config & Validation
 pydantic==2.13.1

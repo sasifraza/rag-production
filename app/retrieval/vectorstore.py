@@ -1,4 +1,4 @@
-from langchain_chroma import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
 from typing import List
 from app.ingestion.embedder import get_embeddings
